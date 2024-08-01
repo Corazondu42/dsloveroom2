@@ -1,0 +1,118 @@
+#rooms main h2 {
+    border-bottom: 2px solid #ffea00;
+    width: fit-content;
+}
+
+#rooms #booking {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#rooms #booking h3 {
+    margin-left: 42px;
+    position: relative;
+}
+
+#rooms #booking h3::before {
+    display: inline-block;
+    content: "";
+    background-image: url("../img/warning.png");
+    background-size: cover;
+    width: 27px;
+    height: 27px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -35px;
+}
+
+#rooms #booking p {
+    margin: 10px 3.5vw;
+}
+
+#rooms #bl {
+    padding: 2vw;
+}
+
+#rooms #bl a {
+    color: black;
+}
+
+#rooms #bl h3 {
+    font-family: "Alex Brush", sans-serif;
+}
+
+#rooms #bl div.upper-part {
+    display: flex;
+
+    @media #{$medium-up} {
+        flex-direction: column;
+    }
+}
+
+#rooms #bl div.upper-part img {
+    width: 40vw;
+}
+#rooms #bl div.upper-part img {
+    margin-right: 4vw;
+    object-fit: cover;
+}
+#rooms #bl div.upper-part img {
+    margin-right: 4vw;
+    object-fit: cover;
+}
+
+#rooms #bl div.upper-part .description a {
+    color: black;
+}
+
+#rooms #bl div.upper-part .description a.book {
+    background-color: #d6ca41;
+    padding: rem(10px);
+    font-size: rem(30px);
+
+    border-radius: rem(5px);
+    box-shadow: 0px 0px rem(10px) rgba(0, 0, 0, 0.1);
+}
+
+// Icones
+
+#rooms p.icon {
+    margin-left: 42px;
+    position: relative;
+
+    &::before {
+
+        display: inline-block;
+        content: "";
+        background-size: cover;
+        width: 27px;
+        height: 27px;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -35px;
+
+    }
+}
+
+#rooms p.led::before {
+    background-image: url("../img/led.png");
+}
+#rooms p.clim::before {
+    background-image: url("../img/snowflake.png");
+}
+#rooms p.cctv::before {
+    background-image: url("../img/cctv.png");
+}
+
+
+
+
+
+

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!-- General informations -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS BLACK ROOM St étienne & alentours | Chambres, jacuzzi privatif et sans vis-à-vis</title>
+    <meta name="description" content="Ambiance chic et reposante, spa, jacuzzi... éclairage tamisé avec led colorées: tout ce que vous pouvez imaginer.">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/scss/assets/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body id="contact" data-scroll-container>
+
+    <header>
+
+    <input type="checkbox" id="navslide">
+    <div> <label for="navslide"> <span class="midblock"></span> </label> </div>
+
+        <a href="../index.html"> <img class="logo" src="../img/Loveroom logo.png" alt="logo"> </a>
+
+        <nav class="navbar">
+
+            <ul>
+                <li> <a href="../index.html"> Accueil </a> </li>
+                <li> <a href="rooms.html"> Nos chambres </a> </li>
+                <li> <a href="services.html"> Nos services </a> </li>
+                <li> <a href="booking.html"> Réservations </a> </li>
+                <li> <a href="#" class="always_underlined"> Contact </a> </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="section1">
+
+            <div class="main-title">
+
+                <h1>
+                    Contactez-nous via ce formulaire
+                </h1>
+
+            </div>
+
+            <div class="formwrapper">
+
+                <form class="contact" onsubmit="sendEmail(); reset(); return false;">
+
+                    <div>
+
+                        <div class="formelement">
+
+                            <label for="lastname">ENTREZ VOTRE NOM DE FAMILLE: (*)</label>
+                            <input id="lastname" type="text" name="lastname" required>
+
+                        </div>
+
+                        <div class="formelement">
+
+                            <label for="firstname">ENTREZ VOTRE PRÉNOM: (*)</label>
+                            <input id="firstname" type="text" name="firstname" required>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div class="formelement">
+
+                            <label for="email">ENTREZ VOTRE EMAIL: (*)</label>
+                            <input id="email" type="text" name="email" placeholder="loveroom@dsroom.fr" required>
+
+                        </div>
+
+                        <div class="formelement">
+
+                            <label for="object">ENTREZ L'OBJECT DE VOTRE MESSAGE: (*)</label>
+                            <input id="object" type="text" name="object" placeholder="Objet" required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="formelement">
+
+                        <label for="phone">ENTREZ VOTRE NUMÉRO</label>
+                        <input id="phone" type="text" name="phone" placeholder="06 XX XX XX XX">
+
+                    </div>
+
+                    <div class="formelement content">
+
+                        <label for="content">ENTREZ LE CONTENU DE VOTRE MESSAGE: (*)</label>
+                        <textarea id="content" name="content" placeholder="Contenu" required></textarea>
+
+                    </div>
+
+                    <input type="submit" value="ENVOYER">
+
+                </form>
+            
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+            <section id="footer1">
+
+                <div class="container">
+
+                    <div class="element">
+                        <i class="fas fa-map"></i>
+
+                        <div>
+                            <h3>Adresse:</h3>
+                            <a href="https://www.google.com/maps/place/41+Rue+du+Professeur+Calmette,+42700+Firminy/@45.3944434,4.2945143,160m/data=!3m1!1e3!4m6!3m5!1s0x47f5b024c2585283:0xa2dc0e391188b732!8m2!3d45.3943944!4d4.294601!16s%2Fg%2F11c1fynz7q?entry=ttu" target="_blank" class="always_underlined">41c du professeur calmette</a>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas fa-envelope"></i>
+
+                        <div>
+                            <h3>Email:</h3>
+                            <a href="mailto:firmcoworking@gmail.com" target="_blank" class="always_underlined">firmcoworking@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fa-solid fa-clock"></i>
+
+                        <div>
+                            <h3>Nos horaires:</h3>
+                            <p>Lundi - Vendredi : 8h - 19h</p>
+                            <p>Samedi : 8h - 13h</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="footer2">
+
+                <div class="container">
+
+                <h2>Nos réseaux:</h2>
+                
+                <div class="buttons">
+
+                    <div class="button">
+
+                        <a href="https://www.facebook.com/people/Coworking-Firminy/pfbid0G1Vo4fVh2QgdfcXbkoMu89imxQFK18c5eVqJrRJ8HpFep1JDTBkyu7KuXR1kU7Cvl/">
+                            
+                            <div class="icon"> <i class="fab fa-facebook-f"></i> </div>
+                            <span>Facebook</span>
+
+                        </a>
+
+                    </div>
+
+                    <div class="button">
+
+                        <a href="https://www.instagram.com/firmcoworking/">
+
+                            <div class="icon"> <i class="fa-brands fa-instagram"></i> </div>
+                            <span>Instagram</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                </div>
+
+            </section>
+
+        </footer>
+    
+</body>
+</html>
+
+<!-- Smooth Scrolling -->
+
+<script src="../js/locomotive-scroll.min.js"></script>
+    <script>
+
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        lerp: 0.06
+    });
+
+    </script>
+
+<!-- Script to send emails with the form -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+
+    function sendEmail() {
+        let phoneString = document.getElementById("phone").value === "" ? "" : "<br><br>NUMÉRO DE TÉLÉPHONE: " + document.getElementById("phone").value;
+
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "cameronseverine@gmail.com",
+        Password : "5A9CBCEDA7AF70075C589678595AA4C9489F",
+        To : 'cameronseverine@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : document.getElementById("object").value,
+        Body : document.getElementById("lastname").value + " " + document.getElementById("firstname").value + 
+            phoneString +
+            "<br><br> CONTENU: <br>" + document.getElementById("content").value
+        }).then(
+        message => alert(message)
+        );
+    }
+
+</script>

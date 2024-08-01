@@ -1,0 +1,68 @@
+.formwrapper {
+    width: 100vw;
+    padding: rem(60px) 0px;
+
+    background-color: #f7f7f7;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formwrapper form {
+    width: 72vw;
+    // border: 1px solid black;
+    
+    padding: rem(30px);
+
+    background-color: white;
+
+    border-radius: 15px;
+}
+
+.formwrapper form .formelement {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$large-up} {
+        margin-top: 20px;
+    }
+}
+
+.formwrapper form .formelement label {
+    font-size: rem(21px);
+}
+
+.formwrapper form > div:not(.formelement) {
+    display: flex;
+    justify-content: center;
+
+    .formelement {
+        width: 40%;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    @media #{$large-up} {
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+
+        .formelement {
+            width: 100%;
+        }
+    }
+}
+
+.formwrapper form > div.formelement {
+    margin-top: rem(20px);
+}
+
+.formwrapper form > div.content {
+    height: 72%;
+
+    textarea {
+        min-height: 100px;
+        max-width: 100%;
+    }
+}

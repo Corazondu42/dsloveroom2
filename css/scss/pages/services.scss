@@ -1,0 +1,90 @@
+#services .services {
+    width: 100vw;
+    a {
+       color: black; 
+    }
+}
+
+#caterer {
+    width: 100vw;
+}
+
+// Slide
+
+@import "../include/slider.scss";
+
+// Blocks
+
+#services .services .content .text p {
+    font-size: 18px;
+}
+
+#services .services > div {
+    margin: rem(50px) 3vw;
+}
+
+#services .services .content {
+    @media #{$medium-down} {
+        width: 60vw;
+        margin: 0 auto;
+    }
+    @media #{$large-down} {
+        width: 40vw;
+        margin: 0 auto;
+    }
+
+}
+
+// Caterer
+
+#caterer .slider input#cslide1:checked ~ img {
+    transform: translate(0);
+}
+#caterer .slider input#cslide2:checked ~ img {
+    transform: translate(-100%);
+}
+#caterer .slider input#cslide3:checked ~ img {
+    transform: translate(-200%);
+}
+#caterer .slider input#cslide4:checked ~ img {
+    transform: translate(-300%);
+}
+
+#caterer .slider img {
+    &#cslide-1 {
+        object-position: 50% 33%;
+    }
+
+    &#cslide-4 {
+        object-position: 50% 60%;
+    }
+}
+
+// Gym
+
+#gym .slider input#gslide1:checked ~ img {
+    transform: translate(0);
+}
+#gym .slider input#gslide2:checked ~ img {
+    transform: translate(-100%);
+}
+#gym .slider input#gslide3:checked ~ img {
+    transform: translate(-200%);
+}
+#gym .slider input#gslide4:checked ~ img {
+    transform: translate(-300%);
+}
+#gym .slider input#gslide5:checked ~ img {
+    transform: translate(-400%);
+}
+
+#gym .slider img {
+    &#gslide-1 {
+        object-position: 50% 33%;
+    }
+
+    &#gslide-4 {
+        object-position: 50% 60%;
+    }
+}
+

@@ -1,0 +1,180 @@
+// Imports
+@import "include/responsive.scss";
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    font-family: "Oswald", sans-serif;
+}
+
+h1 {
+    font-family: "Alex Brush", sans-serif;
+    font-size: rem(48px);
+    letter-spacing: rem(15px);
+}
+
+h2 {
+    font-family: "Alex Brush", sans-serif;
+    font-size: rem(38px);
+    letter-spacing: rem(5px);
+}
+
+h2 a, h2 span{
+    font-family: "Alex Brush", sans-serif;
+}
+
+h3 {
+    font-size: rem(30px);
+}
+
+.bolded {
+    font-weight: 700;
+}
+
+/* General */
+
+    /*  Big titles */
+
+    .main-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100vw;
+        min-height: rem(125px);
+        padding: 0;
+        background-color: #fff;
+    
+        text-align: center;
+    }
+
+    /* Links */
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        background: linear-gradient(to top, #ffea00 0%, #ffea00 5%, transparent 5%) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 0.3s;
+        cursor: pointer;
+    }
+
+    a:hover {
+        background-size: 100% 100%;
+    }
+
+    a.always_underlined {
+        background-size: 100% 100%;
+    }
+
+    a.always_underlined:hover {
+        animation: underlining 0.6s ease both;
+    }
+
+    @keyframes underlining {
+        0% {
+            background-size: 100% 100%;
+            background-position: right bottom;
+        }
+
+        50% {
+            background-size: 0% 100%;
+            background-position: right bottom;
+        }
+
+        50.01% {
+            background-position: left bottom;
+        }
+
+        100% {
+            background-size: 100% 100%;
+            background-position: left bottom;
+        }
+    }
+
+    /* Particular case with the home page's titles */
+
+    a.particular_title {
+        background: none;
+    }
+
+    a.particular_title h2 {
+        background: linear-gradient(to top, #ffea00 0%, #ffea00 7%, transparent 7%) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 0.3s;
+    }
+
+    a.particular_title:hover h2 {
+        background-size: 100% 100%;
+    }
+
+    /* HEADER */
+
+    @import "header.scss";
+
+    img.logo {
+        width: rem(140px);
+        max-height: calc(2vw + 140px);
+    }
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body {
+    margin: 0px;
+    background-color: #fef9e7;
+}
+
+    /* FOOter */
+
+    @import "footer.scss";
+
+/* Highlighting effect */
+
+    ::selection {
+        color: #ffea00;
+    }
+
+    ::-moz-selection {
+        color: #ffea00;
+    }
+
+    /* Color effect for important words */
+
+    .pink {
+        color: #ffea00;
+    }
+
+/* Home */
+
+@import "pages/home.scss";
+
+/* Rooms */
+
+@import "pages/rooms.scss";
+
+/* Services */
+
+@import "pages/services.scss";
+
+/* Booking */
+
+@import "pages/booking.scss";
+
+/* Contact */
+
+@import "pages/contact.scss";
+
+/* Log in */
+
+@import "pages/login.scss";

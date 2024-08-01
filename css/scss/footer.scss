@@ -1,0 +1,148 @@
+/* FOOTER */
+
+#footer1 {
+    background-color: black;
+}
+
+#footer1 .container {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media #{$small-up} {
+        flex-direction: column;
+        align-items: unset;
+        justify-content: center;
+    }
+}
+
+#footer1 .container .element {
+    margin: rem(17px) 5vw;
+
+    display: flex;
+    color: white;
+
+    @media #{$small-up} {
+        margin: rem(17px) 0;
+
+        justify-content: center;
+    }
+}
+
+#footer1 .container .element i {
+    font-size: rem(40px);
+    height: rem(40px);
+    position: relative;
+    left: -5%;
+    top: 50%;
+}
+
+#footer2 {
+    padding-bottom: rem(50px);
+    background-color: #fef9e7;
+}
+
+#footer2 h2 {
+    text-align: center;
+
+    margin: 0;
+    padding: rem(20px) 0px;
+}
+
+#footer2 .container .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#footer2 .button {
+    background-color: white;
+    border-radius: 50px;
+    width: rem(60px);
+    height: rem(60px);
+    cursor: pointer;
+    box-shadow: 0px 0px rem(10px) rgba(0, 0, 0, 0.1);
+    
+    margin: rem(10px);
+
+    transition: all 0.45s ease;
+    overflow: hidden;
+}
+
+#footer2 .button:hover {
+    width: rem(180px);
+}
+
+#footer2 .button a {
+    text-decoration: none;
+    color: black;
+    background: none;
+
+    position: absolute;
+}
+
+#footer2 .button .icon {
+    display: inline-block;
+    width: rem(60px);
+    height: rem(60px);
+    border-radius: 50px;
+
+    transition: all 0.45s ease;
+}
+
+#footer2 .button:nth-child(1):hover .icon {
+    background-color: #0861f2;
+}
+
+#footer2 .button:nth-child(2):hover .icon {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+#footer2 .button .icon i {
+    font-size: rem(35px);
+    line-height: rem(60px);
+    position: relative;
+    left: rem(30px);
+    transform: translateX(-50%);
+
+    transition: all 0.45s ease;
+}
+
+#footer2 .button:hover .icon i {
+    color: white;
+}
+
+#footer2 .button span {
+    font-size: rem(22px);
+    line-height: rem(60px);
+    margin-left: rem(10px);
+    color: #fef9e7;
+
+    transition: all 0.25s ease;
+}
+
+#footer2 .button:nth-child(1):hover span {
+    color: #0861f2;
+}
+
+#footer2 .button:nth-child(2):hover span {
+    color: #fd5949;
+}
+
+#footer3 {
+    background-color: #fef9e7;
+}
+
+#footer3 > p {
+    margin-top: 0;
+}
+
+#footer3 > ul {
+    margin-bottom: 0;
+}
+
+#footer3 a {
+    color: black;
+    background: none;
+}

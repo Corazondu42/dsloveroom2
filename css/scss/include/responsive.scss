@@ -1,0 +1,62 @@
+$xsmall-up: "screen and (max-width: 388px)";
+
+$small-up: "screen and (max-width: 768px)";
+
+$medium-up: "screen and (max-width: 1025px)";
+$medium-down: "screen and (min-width: 1025px)";
+
+$large-down: "screen and (min-width: 1026px)";
+$large-up: "screen and (max-width: 1440px)";
+
+$xlarge-down: "screen and (min-width: 1440px)";
+$xlarge-up: "screen and (max-width: 1921px)";
+
+$xl: "screen and (min-width: 1921px)";
+
+@media #{$xl} {
+
+    html, body {
+        font-size: 18px;
+    }
+
+}
+
+@media #{$xlarge-up} {
+
+    html, body {
+        font-size: 16px;
+    }
+
+}
+
+@media #{$medium-up} {
+
+    html, body {
+        font-size: 16px;
+    }
+
+}
+
+@media #{$small-up} {
+
+    html, body {
+        font-size: 14px;
+    }
+    
+}
+
+@media #{$xsmall-up} {
+
+    html, body {
+        font-size: 12px;
+    }
+
+}
+
+// Functions
+
+$base-size-font: 16px;
+
+@function rem($size, $rootbase: $base-size-font) {
+    @return calc(1rem * $size / $rootbase);
+}
