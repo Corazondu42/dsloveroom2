@@ -3,6 +3,10 @@
     width: fit-content;
 }
 
+#rooms img {
+    border-radius: 15px;
+}
+
 #rooms #booking {
     width: 100vw;
 
@@ -49,7 +53,7 @@
 #rooms #bl div.upper-part {
     display: flex;
 
-    @media #{$medium-up} {
+    @media screen and (max-width: 1616px) {
         flex-direction: column;
     }
 }
@@ -64,6 +68,22 @@
 #rooms #bl div.upper-part img {
     margin-right: 4vw;
     object-fit: cover;
+}
+
+#rooms #bl div.img {
+    @media screen and (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        & img {
+            width: 80%;
+            margin-bottom: 15px;
+            margin-right: 0;
+        }
+        
+    }
 }
 
 #rooms #bl div.upper-part .description a {
@@ -111,6 +131,69 @@
     background-image: url("../img/cctv.png");
 }
 
+
+/* Images gallery */
+
+#rooms #bl .gallery {
+    position: relative;
+    width: 96vw;
+    height: rem(300px);
+    overflow: hidden;
+
+    display: flex;
+
+    & div {
+        display: flex;
+    }
+}
+
+$rem: 7 * rem(300px) + rem(30px * 9);
+$rem2: 2 * $rem;
+
+@debug $rem;
+
+@keyframes infinite-slide {
+
+    0% {
+        transform: translateX(148.125rem);
+    }
+
+    100% {
+        transform: translateX(-148.125rem);
+    }
+
+}
+
+#rooms #bl .gallery .g1 {
+    position: absolute;
+
+    animation: infinite-slide linear both 30s infinite -15s;
+}
+
+@keyframes infinite-slide2 {
+
+    0% {
+        transform: translateX(148.125rem);
+    }
+
+    100% {
+        transform: translateX(-148.125rem);
+    }
+
+}
+
+#rooms #bl .gallery .g2 {
+    position: absolute;
+    animation: infinite-slide2 linear both 30s infinite;
+}
+
+#rooms #bl .gallery img {
+    width: rem(300px);
+    height: rem(200px);
+    margin-right: 30px;
+    margin-top: 20px;
+    object-fit: cover;
+}
 
 
 

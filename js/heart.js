@@ -1,3 +1,5 @@
+/*
+
 // General
 
 import * as THREE from "../assets/three/src/Three.js";
@@ -181,3 +183,5 @@ if (iw >= 1025) {
     }
     });
 }
+
+*/
