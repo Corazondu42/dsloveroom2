@@ -147,10 +147,6 @@
     }
 }
 
-#rooms #bl .gallery2 {
-    
-}
-
 #rooms #bl .gallery img, #rooms #bl .gallery2 img {
     width: rem(300px);
     height: rem(200px);
@@ -216,6 +212,30 @@
     -webkit-animation: infinite-slide2 linear both 30s infinite;
     -o-animation: infinite-slide2 linear both 30s infinite;
     -moz-animation: infinite-slide2 linear both 30s infinite;
+}
+
+// Version mobile temporaire
+
+@media #{$medium-up} {
+
+    #rooms #bl .gallery,
+    #rooms #bl .gallery2 {
+        height: auto;
+    }
+
+    #rooms #bl .gallery .g1,
+    #rooms #bl .gallery2 .g1 {
+        position: relative;
+        flex-wrap: wrap;
+        animation: none;
+        justify-content: center;
+    }
+
+    #rooms #bl .gallery .g2,
+    #rooms #bl .gallery2 .g2 {
+        display: none;
+    }
+
 }
 
 
