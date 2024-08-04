@@ -134,10 +134,10 @@
 
 /* Images gallery */
 
-#rooms #bl .gallery {
+#rooms #bl .gallery, #rooms #bl .gallery2 {
     position: relative;
     width: 96vw;
-    height: rem(300px);
+    height: rem(280px);
     overflow: hidden;
 
     display: flex;
@@ -147,10 +147,17 @@
     }
 }
 
-$rem: 7 * rem(300px) + rem(30px * 9);
-$rem2: 2 * $rem;
+#rooms #bl .gallery2 {
+    
+}
 
-@debug $rem;
+#rooms #bl .gallery img, #rooms #bl .gallery2 img {
+    width: rem(300px);
+    height: rem(200px);
+    margin-right: 30px;
+    margin-top: 20px;
+    object-fit: cover;
+}
 
 @keyframes infinite-slide {
 
@@ -167,7 +174,10 @@ $rem2: 2 * $rem;
 #rooms #bl .gallery .g1 {
     position: absolute;
 
-    animation: infinite-slide linear both 30s infinite -15s;
+    animation: infinite-slide linear both 40s infinite -20s;
+    -webkit-animation: infinite-slide linear both 40s infinite -20s;
+    -o-animation: infinite-slide linear both 40s infinite -20s;
+    -moz-animation: infinite-slide linear both 40s infinite -20s;
 }
 
 @keyframes infinite-slide2 {
@@ -184,15 +194,28 @@ $rem2: 2 * $rem;
 
 #rooms #bl .gallery .g2 {
     position: absolute;
-    animation: infinite-slide2 linear both 30s infinite;
+    animation: infinite-slide2 linear both 40s infinite;
+    -webkit-animation: infinite-slide2 linear both 40s infinite;
+    -o-animation: infinite-slide2 linear both 40s infinite;
+    -moz-animation: infinite-slide2 linear both 40s infinite;
 }
 
-#rooms #bl .gallery img {
-    width: rem(300px);
-    height: rem(200px);
-    margin-right: 30px;
-    margin-top: 20px;
-    object-fit: cover;
+#rooms #bl .gallery2 .g1 {
+    position: absolute;
+
+    animation: infinite-slide linear both 30s infinite -15s;
+    -webkit-animation: infinite-slide linear both 30s infinite -15s;
+    -o-animation: infinite-slide linear both 30s infinite -15s;
+    -moz-animation: infinite-slide linear both 30s infinite -15s;
+}
+
+#rooms #bl .gallery2 .g2 {
+    position: absolute;
+
+    animation: infinite-slide2 linear both 30s infinite;
+    -webkit-animation: infinite-slide2 linear both 30s infinite;
+    -o-animation: infinite-slide2 linear both 30s infinite;
+    -moz-animation: infinite-slide2 linear both 30s infinite;
 }
 
 

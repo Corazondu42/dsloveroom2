@@ -182,10 +182,16 @@
     
         #accueil #section2 div:nth-child(2n+1) img.toanimate {
             animation: slide-LTR 0.7s ease-out both, battement 1.3s linear both infinite;
+            -webkit-animation: slide-LTR 0.7s ease-out both, battement 1.3s linear both infinite;
+            -o-animation: slide-LTR 0.7s ease-out both, battement 1.3s linear both infinite;
+            -moz-animation: slide-LTR 0.7s ease-out both, battement 1.3s linear both infinite;
         }
     
         #accueil #section2 div:nth-child(2n) img.toanimate {
             animation: slide-RTL 0.7s ease-out both, battement 1.3s linear both infinite;
+            -webkit-animation: slide-RTL 0.7s ease-out both, battement 1.3s linear both infinite;
+            -o-animation: slide-RTL 0.7s ease-out both, battement 1.3s linear both infinite;
+            -moz-animation: slide-RTL 0.7s ease-out both, battement 1.3s linear both infinite;
         }
     }
 
