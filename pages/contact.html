@@ -6,10 +6,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DS BLACK ROOM | Suite avec jacuzzi, spa et patio privatif sans vis-à-vis</title>
+    <title>DS BLACK ROOM | Escapade Romantique à Prix Doux à Firminy - Bain nordique et sauna</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/Loveroom Logo.png" />
 
-    <meta name="description" content="Ambiance chic et reposante, spa, jacuzzi... éclairage tamisé avec led colorées: le tout pas cher.">
+    <meta name="description" content="Suite Romantique à Firminy & alentours - Sauna, Balnéo et Petit Prix">
 
 
     <!-- CSS -->
@@ -80,13 +80,6 @@
 
                         <div class="formelement">
 
-                            <label for="email">ENTREZ VOTRE EMAIL: (*)</label>
-                            <input id="email" type="text" name="email" placeholder="loveroom@dsroom.fr" required>
-
-                        </div>
-
-                        <div class="formelement">
-
                             <label for="object">ENTREZ L'OBJECT DE VOTRE MESSAGE: (*)</label>
                             <input id="object" type="text" name="object" placeholder="Objet" required>
 
@@ -96,8 +89,8 @@
 
                     <div class="formelement">
 
-                        <label for="phone">ENTREZ VOTRE NUMÉRO</label>
-                        <input id="phone" type="text" name="phone" placeholder="06 XX XX XX XX">
+                        <label for="phone">ENTREZ VOTRE NUMÉRO (*)</label>
+                        <input id="phone" type="text" name="phone" placeholder="06 XX XX XX XX" required>
 
                     </div>
 
@@ -220,10 +213,10 @@
 
         Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "cameronseverine@gmail.com",
+        Username : "contact@dsloveroom.fr",
         Password : "5A9CBCEDA7AF70075C589678595AA4C9489F",
-        To : 'cameronseverine@gmail.com',
-        From : document.getElementById("email").value,
+        To : "cameronseverine@gmail.com",
+        From : "contact@dsloveroom.fr",
         Subject : document.getElementById("object").value,
         Body : document.getElementById("lastname").value + " " + document.getElementById("firstname").value + 
             phoneString +

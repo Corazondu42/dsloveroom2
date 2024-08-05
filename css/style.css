@@ -970,7 +970,7 @@ body {
   color: black;
 }
 
-#rooms #bl div.upper-part .description a.book {
+#rooms a.book {
   background-color: #d6ca41;
   padding: 0.625rem;
   font-size: 1.875rem;
