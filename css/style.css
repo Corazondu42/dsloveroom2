@@ -1129,19 +1129,19 @@ body {
   }
 }
 #faq .wrapper div:nth-child(1) {
-  animation: pop linear both 10s infinite 6s;
-}
-
-#faq .wrapper div:nth-child(2) {
-  animation: pop linear both 10s infinite 18s;
-}
-
-#faq .wrapper div:nth-child(3) {
   animation: pop linear both 10s infinite 4s;
 }
 
+#faq .wrapper div:nth-child(2) {
+  animation: pop linear both 10s infinite 12s;
+}
+
+#faq .wrapper div:nth-child(3) {
+  animation: pop linear both 10s infinite 8s;
+}
+
 #faq .wrapper div:nth-child(4) {
-  animation: pop linear both 10s infinite 16s;
+  animation: pop linear both 10s infinite 4s;
 }
 
 #faq .wrapper div:nth-child(5) {
@@ -1149,11 +1149,11 @@ body {
 }
 
 #faq .wrapper div:nth-child(6) {
-  animation: pop linear both 10s infinite 2s;
+  animation: pop linear both 10s infinite 6s;
 }
 
 #faq .wrapper div:nth-child(7) {
-  animation: pop linear both 10s infinite 12s;
+  animation: pop linear both 10s infinite 2s;
 }
 
 #faq .wrapper div:nth-child(8) {
@@ -1161,11 +1161,11 @@ body {
 }
 
 #faq .wrapper div:nth-child(9) {
-  animation: pop linear both 10s infinite 16s;
+  animation: pop linear both 10s infinite 10s;
 }
 
 #faq .wrapper div:nth-child(10) {
-  animation: pop linear both 10s infinite 16s;
+  animation: pop linear both 10s infinite 14s;
 }
 
 /* Services */

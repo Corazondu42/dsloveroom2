@@ -14,9 +14,6 @@
     <link rel="stylesheet" href="../css/scss/assets/locomotive-scroll.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- JS -->
-
-
 </head>
 <body id="rooms" data-scroll-container>
 
@@ -342,10 +339,21 @@
 <script src="../js/locomotive-scroll.min.js"></script>
 <script>
 
-    const scroll = new LocomotiveScroll({
+    function mobilecheck() {
+        return (typeof window.orientation !== "undefined") 
+        || (navigator.userAgent.indexOf('IEMobile') !== -1
+        );
+    };
+
+    if (!mobilecheck()) {
+
+        const scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
         lerp: 0.06
+
     });
+
+    }
 
 </script>
