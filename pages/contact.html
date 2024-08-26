@@ -223,9 +223,7 @@
         let phoneString = document.getElementById("phone").value === "" ? "" : "<br><br>NUMÉRO DE TÉLÉPHONE: " + document.getElementById("phone").value;
 
         Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "41professeurcalmette@dsloveroom.fr",
-        Password : "5A9CBCEDA7AF70075C589678595AA4C9489F",
+        SecureToken : "3710967d-71fd-45ad-843e-48a5d514ee77",
         To : "cameronseverine@gmail.com",
         From : "41professeurcalmette@dsloveroom.fr",
         Subject : document.getElementById("object").value,
@@ -236,5 +234,5 @@
         message => alert(message)
         );
     }
-
+    
 </script>
